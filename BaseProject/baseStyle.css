@@ -11,9 +11,33 @@ body {
 }
 
 
+.topMenuContainer {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 52px;
+    clear: both;
+    background-color: #333;
+}
+
+.topMenu {
+    margin: 0px auto 0px auto;
+    width: 720px;
+    clear: both;
+    padding-top: 4px;
+    font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+
+img.menuItem {
+    border: 0;
+    margin-right: 24px;
+}
+
 
 .headlineContainer {
-    margin: 24px auto 24px auto;
+    margin: 36px auto 10px auto;
     width: 720px;
     clear: both;
     padding: 12px;
@@ -21,6 +45,7 @@ body {
 
 
 h3 {
+    margin: 0px 0px 0px 0px;  
     font-family: Gill Sans, Verdana;
     font-size: 11px;
     line-height: 14px;
@@ -30,6 +55,7 @@ h3 {
 }
 
 h2 {
+    margin: 0px 0px 0px 0px;
     font-family: times, Times New Roman, times-roman, georgia, serif;
     color: #444;
     margin: 0;
@@ -41,33 +67,128 @@ h2 {
 }
 
 
-
 .main {
-    margin: 24px auto 24px auto;
+    margin: 10px auto 8px auto;
     width: 720px;
-    height: 400px;
     background-color: teal;
     -moz-border-radius: 15px;
     border-radius: 15px;
     color: white;
-    padding: 12px;
     clear: both;
     font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
-textarea
-{
+textarea {
+    padding: 0px;
+    margin: 0px 10px 0px 10px;
     border: 2px solid black;
-    width:100%;
+    width: 680px;
+    height: 50px;
     font-family: Tahoma, sans-serif;
     font-size: 14px;
     color: teal;
+    resize: none;
 }
 
-.textwrapper
-{
-    margin: 5px 0;
-    padding: 3px;
+
+.textwrapper {
+    margin: 0px;
+    width: 700px;
+    padding: 14px 10px 14px 10px;
+}
+
+.fieldHeadline {
+    padding: 8px 0px 3px 0px;
+    margin: 0px 10px 0px 10px;
+    width: 680px;    
+}
+
+
+
+.buttonContainer {
+    margin: 0px auto 0px auto;
+    width: 680px;
+    clear: both;
+}
+
+.buttonPanelLeft {
+    float: left;
+}
+.buttonPanelRight {
+    float: right;
+}
+.buttonPanelRClear {
+    clear: both;
+} 
+
+.buttonStyle {
+    padding: 5px 10px;
+    display: inline;
+    background: #777 url(button.png) repeat-x bottom;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-shadow: 1px 1px #666;
+    background-color: #333;
+    font-size: 14px;
+}
+.buttonStyle:hover {
+    background-position: 0 -48px;
+}
+.buttonStyle:active {
+    background-position: 0 top;
+    position: relative;
+    top: 1px;
+    padding: 6px 10px 4px;
+}
+.buttonStyle:disabled {
+    background-position: 0 top;
+    position: relative;
+    top: 1px;
+    padding: 6px 10px 4px;
+    cursor: default;
+}
+    
+
+h4 {
+    font-family: Georgia,serif;
+    color: silver;
+    font-variant: small-caps; 
+    text-transform: none; 
+    font-weight: 100;
+    font-size: 24px;
+    margin: 0px;
+    padding: 8px 0px 0px 0px;
+}
+        
+P {
+    font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 14px;
+    margin-top: .5em; 
+    color:  white;
+}
+
+p:first-letter {
+    font-family: Georgia,serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0px; 
+}
+
+hr {
+    margin: 16px 0px 16px 0px;    
+}
+
+a {
+    font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 14px;
+    margin-top: .5em; 
+    color:  silver;
 }

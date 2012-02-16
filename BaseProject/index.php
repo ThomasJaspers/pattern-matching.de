@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>pattern-matching.de</title>
-        <link rel="stylesheet" type="text/css" href="baseStyle.css" />
-        <script type="text/javascript" src="baseScript.js"></script>
-    </head>
+    <?php include("head.php"); ?>
     <body>
+        <?php include("menu.php"); ?>
         
         <div class="headlineContainer">
             <h3>Thank you for visiting ...</h3>
             <h2>pattern-matching.de</h2>            
         </div>
         
+        <form>         
+            <div class="main">
+                <div class="textwrapper">
+                    <div class="fieldHeadline">Your Pattern:</div>        
 
-        
-        <div class="main">
-            <div class="textwrapper">
-            Your Pattern:        
+                    <textarea rows="3" cols="80" id="pattern" maxlength="256"  onfocus="setTextAreaActive('pattern');" onblur="setTextAreaInactive('pattern')"></textarea>
+                    <div class="fieldHeadline">Your Expression(s) to match:</div>
+                    <div id="input1" class="clonedInput">                 
+                        <textarea rows="3" cols="80" id="match_1" name="match_1" maxlength="256"  onfocus="setTextAreaActive('match_1');" onblur="setTextAreaInactive('match_1')"></textarea>
+                    </div>
+                </div>
 
-            <form>         
-                <textarea rows="3" cols="80" id="pattern" maxlength="256"  onfocus="setTextAreaActive('pattern');" onblur="setTextAreaInactive('pattern')"></textarea>
-            </form>
-        </div>
-
-            <?php
-            // put your code here
-            ?>
-        </div>
+                <?php
+                // put your code here
+                ?>
+            </div>
+            
+            
+            <div class="buttonContainer">
+                <div class="buttonPanelLeft">
+                    <input type="button" id="btnAdd" class="buttonStyle" value=" + " />
+                    <input type="button" id="btnDel" class="buttonStyle" value=" - " />                   
+                </div>
+                <div class="buttonPanelRight">
+                    <input type="submit" id="btnMatch" class="buttonStyle" value=" Match " />
+                </div>
+                <div class="buttonPanelClear" />        
+            </div>    
+        </form>              
+       
     </body>
 </html>
